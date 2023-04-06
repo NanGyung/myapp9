@@ -14,6 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Transactional
 public class NoticeSVCImpl implements NoticeSVC{
+//  하나의 서비스에 여러 DAO 가능
 
   private final NoticeDAO noticeDAO;
 

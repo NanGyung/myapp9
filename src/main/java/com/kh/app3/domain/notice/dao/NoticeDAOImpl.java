@@ -19,7 +19,7 @@ import java.util.List;
 @Repository
 @RequiredArgsConstructor
 public class NoticeDAOImpl implements NoticeDAO{
-
+    // 파라미터를 순서대로 받아오기 때문에 ?로 표기 예)sql.append("values(?,?,?)")
     private final JdbcTemplate jdbcTemplate;
 //  private JdbcTemplate jdbcTemplate;
 //  public NoticeDAOImpl(JdbcTemplate jdbcTemplate){

@@ -13,7 +13,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +27,7 @@ public class NoticeController {
 
   //  등록화면
   @GetMapping("")
-  public String addForm(@ModelAttribute AddForm addFrom) {
+  public String addForm(@ModelAttribute AddForm addFrom) {  //view의 th:object="${addForm(객체명)}"에 전달
     log.info("NoticeController.addForm() 호출됨!");
     return "notice/addForm";
   }
