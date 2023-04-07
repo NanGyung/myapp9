@@ -72,6 +72,9 @@
 <!--                      <i class="fa-solid fa-reply"></i>-->
                       <i class="fa-solid fa-comment-dots"></i>
                     </th:block>
+                    <!--     @{/bbs/{id}/{category}(id=${item.bbsId},category=${category})}          -->
+                    <!--       /bbs/10/b0101 (url경로)             -->
+                    <!--       /bbs/10?category=b0101 (쿼리스트링)        -->
                     <a href="" th:href="@{/bbs/{id}(id=${item.bbsId},category=${category})}" th:text="${item.title}">제목</a>
                   </td>
                   <td th:text="${item.nickname}">작성자1</td>
